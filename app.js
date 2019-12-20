@@ -1,6 +1,4 @@
-const submit = document.getElementById('submit')
-
-submit.addEventListener('click', () => {
+function send(){
   const first_name = document.getElementById('first').value
   const second_name = document.getElementById('second').value
   const phone = document.getElementById('phone').value
@@ -14,5 +12,4 @@ submit.addEventListener('click', () => {
   axios.post('https://loterie.herokuapp.com/users', data)
 
   console.log(data)
-})
-
+}
